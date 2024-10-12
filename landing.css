@@ -15,6 +15,7 @@
 body {
     font-family: 'Inter', "-apple-system", "BlinkMacSystemFont," "Segoe UI", "Roboto", "Oxygen-Sans, Ubuntu, Cantarell", "Helvetica Neue", sans-serif;
     background-color: #f5f6f7;
+    line-height: 1.5;
 }
 
 .Header{
@@ -182,4 +183,162 @@ body {
     padding-right: 2rem;
     padding-bottom: 1rem;
     color: var(--Secondary)
+}
+
+.demo-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.tab-button {
+    background: none;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.tab-button.active {
+    border-bottom-color: #3B82F6;
+    color: #3B82F6;
+}
+
+.tab-content {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    color: #6B7280;
+    margin-bottom: 1.5rem;
+}
+
+.dashboard-stats, .analytics-content, .interview-prep {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.progress-bar {
+    background: #E5E7EB;
+    border-radius: 9999px;
+    height: 20px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.progress {
+    background: #3B82F6;
+    color: white;
+    height: 100%;
+    padding: 0 0.5rem;
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+.application-item {
+    background: #F3F4F6;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.application-item h4 {
+    margin: 0 0 0.5rem;
+}
+
+.status {
+    display: inline-block;
+    background: #E5E7EB;
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    margin-right: 1rem;
+}
+
+.update-btn {
+    background: #3B82F6;
+    color: white;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.big-stat {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.trend {
+    font-size: 1rem;
+}
+
+.trend.positive {
+    color: #10B981;
+}
+
+.interview-checklist li {
+    display: flex;
+    align-items: center;
+}
+
+.interview-checklist input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .dashboard-stats, .analytics-content, .interview-prep {
+        grid-template-columns: 1fr;
+    }
+
+    .tabs {
+        flex-wrap: wrap;
+    }
+
+    .tab-button {
+        flex: 1 1 40%;
+        margin-bottom: 0.5rem;
+    }
 }
