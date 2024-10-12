@@ -125,3 +125,61 @@ body {
     width: 200px;
     height: 40px;
 }
+
+
+
+
+.key-features{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+.key-features h2{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.cards{
+    display: grid;
+    
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 2rem;
+}
+
+.card{
+    width: 95%;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.svg{
+    padding-left: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.svg img{
+    height: 35px;
+}
+
+.card-title{
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+}
+
+.card-des{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    color: var(--Secondary)
+}
