@@ -1,0 +1,53 @@
+:root{
+    --Primary: #3B82F6;
+    --Secondary: #1F2937; 
+    --Background: #F3F4F6;
+    --Text: #111827;
+    --Muted-Text: #6B7280; 
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    background-color: #f5f6f7;
+}
+
+.Header{
+    background-color: #ffffff;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    justify-content: space-between;
+}
+
+.logo-name{
+    font-size: 30px;
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.options{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+}
+
+.options a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #111827;
+    
+}
